@@ -2,7 +2,12 @@
   "name": "@tjun1/gh-pkg-sample",
   "version": "1.0.0",
   "description": "Github package を練習する",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "exit 0"
   },
@@ -15,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tjun1/gh-pkg-sample/issues"
   },
-  "homepage": "https://github.com/tjun1/gh-pkg-sample#readme"
+  "homepage": "https://github.com/tjun1/gh-pkg-sample#readme",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
 }
